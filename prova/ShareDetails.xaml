@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prova.ShareDetails"
+             Title="ShareDetails">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0" Text="Nome: "></Label>
+                <Label Grid.Row="0" Grid.Column="1" x:Name="Nome"></Label>
+                
+                <Label Grid.Row="1" Grid.Column="0" Text="Sobrenome: "></Label>
+                <Label Grid.Row="1" Grid.Column="1" x:Name="Sobrenome"></Label>
+
+                <Label Grid.Row="2" Grid.Column="0" Text="Capitalização: "></Label>
+                <Label Grid.Row="2" Grid.Column="1" x:Name="Capitalizacao"></Label>
+                
+                <Label Grid.Row="3" Grid.Column="0" Text="Variação: "></Label>
+                <Label Grid.Row="3" Grid.Column="1" x:Name="Variacao"></Label>
+                
+                <Label Grid.Row="4" Grid.Column="0" Text="Percentual de Variação: "></Label>
+                <Label Grid.Row="4" Grid.Column="1" x:Name="Percentual"></Label>
+
+                <Label Grid.Row="5" Grid.Column="0" Text="Preço: "></Label>
+                <Label Grid.Row="5" Grid.Column="1" x:Name="Preco"></Label>
+            </Grid>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
